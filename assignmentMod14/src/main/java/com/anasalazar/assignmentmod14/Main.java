@@ -18,6 +18,7 @@ public class Main {
         
         
     }
+    //check if number is prime
     public static boolean isPrime(int number){
             if (number <= 1){
                 return false;
@@ -29,6 +30,7 @@ public class Main {
             }
             return true;
     }
+    //check if a number has the digit 5
     public static boolean hasDigit5(int number){
         while (number > 0){
             if (number % 10 == 5){
@@ -38,11 +40,12 @@ public class Main {
         }
         return false;
     }
+    //calculate the sum on the prime numbers with digit 5
     public static int sumPrimeAndDigit5(int n){
         int sum = 0;
         for (int i = 2; i <= n; i++){
             if (isPrime(i) && hasDigit5(i)){
-                sum +=i;
+                sum += i;
             }
         }
         return sum;
