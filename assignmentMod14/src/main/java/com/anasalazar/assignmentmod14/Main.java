@@ -11,10 +11,29 @@ package com.anasalazar.assignmentmod14;
 public class Main {
     public static void main(String[] args) {
         
-        int number = 100;
-        int sum = sumPrimeAndDigit5(number);
+        //test 1 - when n has primer numbers with digit 5 
+        int n = 100;
+        int sum = sumPrimeAndDigit5(n);
         System.out.println("Sum of prime numbers with digit 5 from 0 to " + 
-                            number + " is: " + sum);
+                            n + " is: " + sum);
+        
+        //test 2 - when n is 0
+        int n2 = 0;
+        int sum2 = sumPrimeAndDigit5(n2);
+        System.out.println("Sum of prime numbers with digit 5 from 0 to " + 
+                            n2 + " is: " + sum2);
+        
+        //test 3 - when n is negative 
+        int n3 = -10;
+        int sum3 = sumPrimeAndDigit5(n2);
+        System.out.println("Sum of prime numbers with digit 5 from 0 to " + 
+                            n3 + " is: " + sum3);
+        
+        //test 4 - when there a no prime number between 0 and n
+        int n4 = 30;
+        int sum4 = sumPrimeAndDigit5(n3);
+        System.out.println("Sum of prime numbers with digit 5 from 0 to " + 
+                            n4 + " is: " + sum4);
         
         
     }
